@@ -7,14 +7,12 @@ class ApiFeatures {
 
     pagination(resultPerPage) {
         const currentPage = Number(this.queryStr.page) || 1;
-        const skipProduct = resultPerPage * (currentPage - 1);
+        const skipTask = resultPerPage * (currentPage - 1);
 
-        this.query = this.query.limit(resultPerPage).skip(skipProduct);
+        this.query = this.query.limit(resultPerPage).skip(skipTask);
 
         return this;
     }
 
 
 }
-
-module.exports = ApiFeatures;
