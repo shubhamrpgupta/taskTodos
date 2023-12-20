@@ -25,7 +25,7 @@ app.use(errorMiddleware);
 //List of all the tasks
 app.get("/tasks", catchAsyncError(async (req, res) => {
 
-    const resultPerPage = 5
+    const resultPerPage = 10
     const apiFeature = new ApiFeatures(Task.find(), req.query)
         .pagination(resultPerPage)
 
