@@ -1,7 +1,7 @@
 class ApiFeatures {
     constructor(query, queryStr) {
-        this.query = query;   //this.query is Task.find()
-        this.queryStr = queryStr;   //this.quertStr is query String
+        this.query = query;   
+        this.queryStr = queryStr;   
 
     }
 
